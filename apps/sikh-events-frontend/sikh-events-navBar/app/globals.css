@@ -23,3 +23,21 @@ body {
 .navBarOptions {
   margin: 5px;
 }
+
+.nav{
+  background-color: #191A2E;
+}
+
+.searchBar-container{
+  margin-left: -160px;
+}
+
+.searchBar{
+  height: 35px;
+  width: 450px;
+  border-radius: 50px;
+}
+
+.signUp {
+  background-color: #FFBF00;
+}

@@ -1,74 +1,31 @@
 import React from 'react'
 import Header from "./Header"
 import Link from '@/node_modules/next/link'
+import Searchbar from './Searchbar'
 
 const NavBar = () => {
   return (
 
     <div >
-    <div className="navbar bg-amber-400 rounded-3xl" >
+    <div className="navbar nav rounded-3xl" >
+
+  <img src="/assets/SikhiHub_logo.png" alt="Logo" className="h-10 ml-1 mr-1" />
   <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h7" />
-        </svg>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <Link href="../home" className='navBarOptions'>Home</Link>
-        <Link href="../events " className='navBarOptions'> Events</Link>
-        <Link href="../aboutUs" className='navBarOptions'> About</Link>
-        <Link href="../contactUs" className='navBarOptions'> Contact</Link>
-      </ul>
-    </div>
+    <a className="text-xl font-bold text-white">SikhiHub</a>
   </div>
-  <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">Sikh Events</a>
-  </div>
+
+  <Searchbar></Searchbar>
+
   <div className="navbar-end">
-    <button className="btn btn-ghost btn-circle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg>
-    </button>
-    <button className="btn btn-ghost btn-circle">
-      <div className="indicator">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-        </svg>
-        <span className="badge badge-xs badge-primary indicator-item"></span>
-      </div>
-    </button>
+    <a className="btn btn-ghost text-lg text-white hover:text-customYellow careers">Careers</a>
+    <a className="btn btn-ghost text-lg text-white  hover:text-customYellow aboutUs">About Us</a>
+    <a className="btn btn-ghost text-lg text-white mr-5  hover:text-customYellow contactUs">Contact Us</a>
+    <a className="btn btn-ghost text-base text-black bg-white  rounded-2xl px-2 py-0 mx-1 login">Login</a>
+    <a className="btn btn-ghost text-base text-white rounded-2xl px-2 py-0 mx-1 signUp">Sign Up</a>
+    
   </div>
+
+  
 </div>
 </div>
   )
