@@ -5,6 +5,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
     extend: {
@@ -15,12 +16,14 @@ const config: Config = {
       },
       colors: {
         customYellow: '#FFBF00',
+        customBlue: '#191A2E'
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), require('flowbite/plugin')],
   daisyui: {
     themes: ["winter"],
   }
+  
 }
 export default config

@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import EventsCard from '../components/EventsCard'
 import UpcomingEvents from '../components/UpcomingEvents'
+import NavBar2 from '../components/NavBar2'
 
 export default function Home() {
   return (
@@ -11,16 +12,12 @@ export default function Home() {
    <main> 
 
     <div> 
-    <NavBar></NavBar>
-
-    <div className="flex-grow m-10">
-
+      <NavBar></NavBar>
+      <div className="flex-grow m-10">
         <UpcomingEvents></UpcomingEvents>
       </div>
-    <Footer></Footer>
-
+      <Footer></Footer>
     </div>
-
 
     {/* <Link href="/users"> Users</Link> */}
     </main>
