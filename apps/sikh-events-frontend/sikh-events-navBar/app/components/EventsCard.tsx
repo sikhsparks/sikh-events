@@ -5,8 +5,8 @@ const EventsCard = () => {
   
   return (
 
-    <div className="h-56 md:h-64 xl:h-80 2xl:h-full">
-      <Carousel slideInterval={5000} className="eventsCard">
+    <div className="h-56 -m-10 sm:h-64 xl:h-80 2xl:h-96 rounded-none">
+      <Carousel slideInterval={5000} className="w-screen -mx-5 ">
         <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
         <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
         <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />

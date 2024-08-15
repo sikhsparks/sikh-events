@@ -16,8 +16,7 @@ const NavBar = () => {
 
   return (
 
-    <div>
-      <nav className="nav border-gray-200 dark:bg-gray-900 rounded-3xl">
+      <nav className="nav border-gray-200 -m-5">
         <div className="flex flex-wrap items-center p-4">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3">
@@ -108,7 +107,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-    </div>
+
   )
 }
 
