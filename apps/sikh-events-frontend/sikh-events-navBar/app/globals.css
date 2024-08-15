@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'flowbite/dist/flowbite.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -45,4 +46,12 @@ body {
 .footer {
   background-color: #191A2E;
 }
+
+.customFont {
+
+  font-size: 1.025rem /* 18px */;
+  line-height: 1.60rem /* 28px */;
+  
+}
+
 

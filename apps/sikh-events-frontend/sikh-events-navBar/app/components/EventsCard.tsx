@@ -1,21 +1,19 @@
-import React from 'react'
+"use client";
+import { Carousel } from "flowbite-react";
 
 const EventsCard = () => {
+  
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl w-full">
-  <figure >
-    <img 
-      src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-      alt="Album " />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">--------------</h2>
-    <p>------------------------------------</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">----------</button>
+
+    <div className="h-56 md:h-64 xl:h-80 2xl:h-full">
+      <Carousel slideInterval={5000} className="eventsCard">
+        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
+        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+      </Carousel>
     </div>
-  </div>
-</div>
 
   )
 }
