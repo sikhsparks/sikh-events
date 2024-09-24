@@ -18,6 +18,7 @@ const config: Config = {
         customYellow: '#FFBF00',
         customBlue: '#191A2E'
       },
+    
     },
   },
   plugins: [require('daisyui'), require('flowbite/plugin')],
