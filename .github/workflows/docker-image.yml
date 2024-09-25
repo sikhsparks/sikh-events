@@ -20,7 +20,7 @@ jobs:
 
     # Step 3: Build the Docker image
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/sikh-events-app:latest ../apps/sikh-events-frontend/sikh-events-navBar
+      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/sikh-events-app:latest ../../apps/sikh-events-frontend/sikh-events-navBar
 
     # Step 4: Push the Docker image to Docker Hub
     - name: Push Docker image
