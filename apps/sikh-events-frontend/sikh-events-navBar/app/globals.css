@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'flowbite/dist/flowbite.css';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  padding: 20px;
+  color: black;
+  
+}
+
+.navBarOptions {
+  margin: 5px;
+}
+
+.nav{
+  background-color: #191A2E;
+}
+
+.searchBar-container{
+  margin-left: -160px;
+}
+
+.searchBar{
+  height: 35px;
+  width: 450px;
+  border-radius: 50px;
+}
+
+.signUp {
+  background-color: #FFBF00;
+}
+
+.footer {
+  background-color: #191A2E;
+}
+
+.customFont {
+
+  font-size: 1.025rem /* 18px */;
+  line-height: 1.60rem /* 28px */;
+  
+}
+
+.carousel {
+  height: 340px;
+}
+
