@@ -1,0 +1,25 @@
+name: Deploy to Azure App Service with Terraform
+on:
+  push:
+    branches:
+      - NavBar-Development
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.4.0 # Specify your Terraform version
+      - name: Configure Azure Credentials
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }} # Store your credentials in GitHub secrets
+      - name: Terraform Init
+        run: terraform init
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
+      - name: Logout from Azure
+        run: az logout
